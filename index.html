@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="#">Analytics Dashboard</a>
+        <form class="d-flex justify-content-start" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <span class="bi bi-person-circle"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Main Navigation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Analytics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+            </ul>
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bootstrap Components</h5>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Elements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Componets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Form Elements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tables</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dashboard Boxes</h5>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">chart Boxes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Charts</h5>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ChartJs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+    <br><br><br>
+    <div class="card">
+      <div class="card-body d-flex justify-content-between">
+        <span>Analytics Dashboard</span>
+        <span><button type="button" class="btn btn-success bi bi-plus">Create</button></span>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        Portfolio Performance
+      </div>
+      <div class="card-body">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="vstack" >
+                <div class="bg-light border"> Cash Deposit</div>
+                <div class="bg-light border">1.7M</div>
+                <div class="bg-light border">54.1% less earning</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="vstack" >
+                <div class="bg-light border"> Invested Dividents</div>
+                <div class="bg-light border">9M</div>
+                <div class="bg-light border">Growth Rate 14.1%</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="vstack" >
+                <div class="bg-light border"> Capital Gains</div>
+                <div class="bg-light border">$563</div>
+                <div class="bg-light border">Increased by 7.35%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center><button type="button" class="btn btn-primary"> View Complete Report</button></center>
+      <br>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        Company Agent Status
+      </div>
+      
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Avater</th>
+              <th scope="col">Name</th>
+              <th scope="col">Company</th>
+              <th scope="col">Status</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Target Achievment</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td class="bi bi-person-circle"></td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td><span class="badge text-bg-danger">Canceled</span></td>
+              <td>12 DEC</td>
+              <td><div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-label="Example with label" style="width: 71%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">71%</div>
+              </div></td>
+              <td><div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Hire</button>
+                <button type="button" class="btn btn-primary">Fire</button>
+              </div></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td class="bi bi-person-circle"></td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td><span class="badge text-bg-info">Onhold</span></td>
+              <td>12 DEC</td>
+              <td><div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-label="Example with label" style="width: 54%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">54%</div>
+              </div></td>
+              <td><div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Hire</button>
+                <button type="button" class="btn btn-primary">Fire</button>
+              </div></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td class="bi bi-person-circle"></td>
+              <td>Larry the Bird</td>
+              <td>Tempo</td>
+              <td><span class="badge text-bg-warning">Inprogress</span></td>
+              <td>12 DEC</td>
+              <td><div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Example with label" style="width: 97%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">97%</div>
+              </div></td>
+              <td><div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Hire</button>
+                <button type="button" class="btn btn-primary">Fire</button>
+              </div></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td class="bi bi-person-circle"></td>
+              <td>Larry</td>
+              <td>Moon</td>
+              <td><span class="badge text-bg-success">Completed</span></td>
+              <td>12 DEC</td>
+              <td><div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 88%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">88%</div>
+              </div></td>
+              <td><div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Hire</button>
+                <button type="button" class="btn btn-primary">Fire</button>
+              </div></td>
+            </tr>
+          </tbody>
+        </table>
+        <center><button type="button" class="btn btn-secondary"><span class="bi bi-gear"></span> View Complete Report</button></center>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-body d-flex justify-content-between ">
+        <span>Copyright 2022</span>
+        <span><button type="button" class="btn btn-primary">HomePage</button></span>
+      </div>
+    </div>
+
+  </div>
+  <script src="/js/bootstrap.js"></script>
+</body>
+</html>
